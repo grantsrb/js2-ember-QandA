@@ -5,5 +5,5 @@ export default DS.Model.extend({
   content: DS.attr(),
   tag: DS.attr(),
   date: DS.attr(),
-  // answers: DS.hasMany("answer")
+  answers: DS.attr()
 });
