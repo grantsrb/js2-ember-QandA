@@ -12,10 +12,12 @@
   {{else}}
     <div class="col-sm-9">
       <div class="row panel">
-        <p>{{question.content}}</p>
+        <h3>Question:</h3>
+        <p><strong>{{question.content}}</strong></p>
         <p><em>{{question.details}}</em></p>
       </div>
       <div class="row panel">
+        <h3>Answers:</h3>
         {{#each question.answers as |answer|}}
           {{display-answer answer=answer destroyAnswer="destroyAnswer"}}
         {{/each}}
