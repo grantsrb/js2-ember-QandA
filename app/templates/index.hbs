@@ -1,4 +1,4 @@
-<h1>hey</h1>
+
 {{#each model as |question|}}
-  {{display-question question=question}}
+  {{display-question question=question destroyQuestion='destroyQuestion' updateQuestion="updateQuestion"}}
 {{/each}}

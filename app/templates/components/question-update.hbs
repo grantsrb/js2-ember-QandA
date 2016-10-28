@@ -1,0 +1,15 @@
+<form>
+  <div class="form-group">
+    <label for="author">Name:</label>
+    {{input value=author id="author"}}
+  </div>
+  <div class="form-group">
+    <label for="content">Question:</label>
+    {{input value=content id="content"}}
+  </div>
+  <div class="form-group">
+    <label for="tags">Tags:</label>
+    {{input value=tags id="tags"}}
+  </div>
+  <button {{action 'updateQuestion' question}}>Commit Changes</button>
+</form>
