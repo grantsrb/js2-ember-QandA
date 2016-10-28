@@ -1,21 +1,25 @@
 <div class="row panel">
   <div class="col-sm-3 panel">
-    {{#link-to "question" question.id}}
-      <h4>{{question.author}}</h4>
-      <h5>{{question.date}}</h5>
-    {{/link-to}}
+    <h4>{{question.author}}</h4>
+    <h5>{{question.date}}</h5>
     <button {{action 'displayUpdate' showUpdate}}>Edit</button>
     <button {{action 'deleteQuestion' question}}>Delete</button>
   </div>
   {{#if showUpdate}}
-  <div class="col-sm-9 panel">
-    {{question-update question=question updateQuestion="updateQuestion"}}
-  </div>
+    <div class="col-sm-9 panel">
+      {{question-update question=question updateQuestion="updateQuestion"}}
+    </div>
   {{else}}
-    {{#link-to "question" question.id}}
-      <div class="col-sm-9 panel">
+    <div class="col-sm-9">
+      <div class="row panel">
         <p>{{question.content}}</p>
       </div>
-    {{/link-to}}
+      <div class="row panel">
+        {{#each question.answers as |answer|}}
+          {{display-answer answer=answer destroyAnswer="destroyAnswer"}}
+        {{/each}}
+        {{new-answer question=question makeAnswer="makeAnswer"}}
+      </div>
+    </div>
   {{/if}}
 </div>

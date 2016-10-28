@@ -13,11 +13,10 @@ export default Ember.Component.extend({
     saveQuestion() {
       var now = new Date();
       var params = {
-        author: this.get('author'),
-        content: this.get('content'),
-        tags: this.get('tags'),
-        date: now.toDateString(),
-        answers: ""
+        author: this.get('author') ? this.get('author'):"Anonymous",
+        content: this.get('content') ? this.get('content'):"What is life?",
+        tags: this.get('tags') ? this.get('tags') : "none",
+        date: now.toDateString()
       };
       this.set('showForm', false);
       this.sendAction("saveQuestion", params);

@@ -16,12 +16,6 @@ export default Ember.Component.extend({
     updateQuestion(question, params) {
       this.set('showUpdate', false);
       this.sendAction('updateQuestion', question, params);
-    },
-    destroyAnswer(answer) {
-      this.sendAction('destroyAnswer', answer);
-    },
-    makeAnswer(params) {
-      this.sendAction('makeAnswer', params);
     }
   }
 });
