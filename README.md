@@ -1,7 +1,12 @@
-# Js2-ember-qand-a
+# Q and A
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+### _Epicodus: Javascript Week 2_
+
+#### By _[**Satchel Grant**](https://github.com/grantsrb)_
+
+## Description
+
+This is a website for general posting of questions and answers. This is a project to practice using Ember.
 
 ## Prerequisites
 
@@ -16,7 +21,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd js2-ember-qand-a`
+* `cd js2-ember-QandA`
 * `npm install`
 * `bower install`
 
@@ -51,3 +56,20 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Support and contact details
+
+Satchel Grant: _grantsrb@gmail.com_
+
+## Technologies Used
+
+_Javascript,
+Angular,
+Gulp,
+Bower,
+Sass_
+
+### License
+
+This webpage is licensed under the GPL license.
+
+Copyright &copy; 2016 **_Satchel Grant_**
